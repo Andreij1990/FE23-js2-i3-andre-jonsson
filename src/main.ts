@@ -44,6 +44,7 @@ function createProductCard(product: Product): HTMLElement {
     const image: HTMLImageElement = document.createElement('img');
     image.src = product.images[0];
     image.alt = product.title;
+    image.classList.add('images');
     imageContainer.appendChild(image);
 
     card.appendChild(imageContainer);
